@@ -9,19 +9,19 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { AnalysisResults } from '@/components/AnalysisResults';
 
 const niches = [
-  "Restaurant & Food",
-  "E-commerce & Retail",
-  "Health & Fitness",
-  "Beauty & Wellness",
-  "Professional Services",
-  "Real Estate",
-  "Education & Training",
-  "Technology & Software",
-  "Automotive",
-  "Home & Garden",
-  "Entertainment & Events",
-  "Non-profit",
-  "Other"
+  "Restaurante e Alimentação",
+  "E-commerce e Varejo",
+  "Saúde e Fitness",
+  "Beleza e Bem-estar",
+  "Serviços Profissionais",
+  "Imóveis",
+  "Educação e Treinamento",
+  "Tecnologia e Software",
+  "Automotivo",
+  "Casa e Jardim",
+  "Entretenimento e Eventos",
+  "Organização sem fins lucrativos",
+  "Outros"
 ];
 
 export const HowItWorks = () => {
@@ -60,30 +60,30 @@ export const HowItWorks = () => {
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
-            Get Your Free Analysis
+            Receba Sua Análise Gratuita
           </h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            Tell us about your business and we'll analyze your digital presence in seconds.
+            Conte-nos sobre seu negócio e analisaremos sua presença digital em segundos.
           </p>
         </div>
 
         <Card className="glass-effect border-gray-700/50 hover:border-purple-500/50 transition-all duration-300">
           <CardHeader>
             <CardTitle className="text-2xl text-center text-white">
-              Business Information
+              Informações do Negócio
             </CardTitle>
           </CardHeader>
           <CardContent className="p-8">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="space-y-2">
                 <Label htmlFor="businessName" className="text-white text-lg">
-                  Business Name *
+                  Nome do Negócio *
                 </Label>
                 <Input
                   id="businessName"
                   value={formData.businessName}
                   onChange={(e) => setFormData({ ...formData, businessName: e.target.value })}
-                  placeholder="Enter your business name"
+                  placeholder="Digite o nome do seu negócio"
                   className="bg-gray-800/50 border-gray-600 text-white placeholder:text-gray-400 focus:border-purple-500 h-12 text-lg"
                   required
                 />
@@ -91,14 +91,14 @@ export const HowItWorks = () => {
 
               <div className="space-y-2">
                 <Label htmlFor="niche" className="text-white text-lg">
-                  Business Niche/Segment *
+                  Nicho/Segmento do Negócio *
                 </Label>
                 <Select 
                   value={formData.niche} 
                   onValueChange={(value) => setFormData({ ...formData, niche: value })}
                 >
                   <SelectTrigger className="bg-gray-800/50 border-gray-600 text-white h-12 text-lg">
-                    <SelectValue placeholder="Select your business niche" />
+                    <SelectValue placeholder="Selecione o nicho do seu negócio" />
                   </SelectTrigger>
                   <SelectContent className="bg-gray-800 border-gray-600">
                     {niches.map((niche) => (
@@ -112,13 +112,13 @@ export const HowItWorks = () => {
 
               <div className="space-y-2">
                 <Label htmlFor="additionalInfo" className="text-white text-lg">
-                  Additional Business Details
+                  Detalhes Adicionais do Negócio
                 </Label>
                 <Textarea
                   id="additionalInfo"
                   value={formData.additionalInfo}
                   onChange={(e) => setFormData({ ...formData, additionalInfo: e.target.value })}
-                  placeholder="Tell us about your target audience, operating region, digital marketing budget, or any other relevant information..."
+                  placeholder="Conte-nos sobre seu público-alvo, região de atuação, orçamento de marketing digital ou qualquer outra informação relevante..."
                   className="bg-gray-800/50 border-gray-600 text-white placeholder:text-gray-400 focus:border-purple-500 min-h-[120px] text-lg"
                   rows={4}
                 />
@@ -133,15 +133,15 @@ export const HowItWorks = () => {
                 {isAnalyzing ? (
                   <div className="flex items-center gap-2">
                     <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
-                    Analyzing Your Digital Presence...
+                    Analisando Sua Presença Digital...
                   </div>
                 ) : (
-                  'Start Free Analysis'
+                  'Iniciar Análise Gratuita'
                 )}
               </Button>
 
               <p className="text-center text-sm text-gray-400 mt-4">
-                ✅ 100% Free • ✅ No Email Required • ✅ Instant Results
+                ✅ 100% Gratuito • ✅ Sem Email Obrigatório • ✅ Resultados Instantâneos
               </p>
             </form>
           </CardContent>

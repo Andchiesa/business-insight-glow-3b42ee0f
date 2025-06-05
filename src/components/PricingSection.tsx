@@ -6,51 +6,51 @@ import { Badge } from '@/components/ui/badge';
 
 const plans = [
   {
-    name: "Free Analysis",
-    price: "Free",
-    description: "Perfect for getting started",
+    name: "Análise Gratuita",
+    price: "Grátis",
+    description: "Perfeito para começar",
     features: [
-      "Basic digital presence scan",
-      "Identify current strengths",
-      "Foundation score analysis",
-      "General improvement areas"
+      "Análise básica da presença digital",
+      "Identificar pontos fortes atuais",
+      "Análise da pontuação da base",
+      "Áreas gerais de melhoria"
     ],
-    buttonText: "Start Free Analysis",
+    buttonText: "Começar Análise Gratuita",
     popular: false,
     gradient: "from-gray-600 to-gray-700"
   },
   {
-    name: "Growth Accelerator",
-    price: "$29",
-    period: "/month",
-    description: "Everything you need to grow",
+    name: "Acelerador de Crescimento",
+    price: "R$29",
+    period: "/mês",
+    description: "Tudo que você precisa para crescer",
     features: [
-      "Unlimited detailed analyses",
-      "Specific action plans with timelines",
-      "Step-by-step implementation guides",
-      "Competitor analysis & insights",
-      "Monthly progress tracking",
-      "Priority email support",
-      "ROI tracking & optimization tips"
+      "Análises detalhadas ilimitadas",
+      "Planos de ação específicos com cronogramas",
+      "Guias de implementação passo a passo",
+      "Análise da concorrência e insights",
+      "Acompanhamento mensal do progresso",
+      "Suporte prioritário por email",
+      "Rastreamento de ROI e dicas de otimização"
     ],
-    buttonText: "Start Growing Now",
+    buttonText: "Começar a Crescer Agora",
     popular: true,
     gradient: "from-purple-600 to-pink-600"
   },
   {
-    name: "Enterprise",
-    price: "Custom",
-    description: "For agencies and large businesses",
+    name: "Empresarial",
+    price: "Personalizado",
+    description: "Para agências e grandes empresas",
     features: [
-      "Everything in Growth Accelerator",
-      "White-label reports",
-      "Multiple business profiles",
-      "Team collaboration tools",
-      "API access",
-      "Dedicated account manager",
-      "Custom integrations"
+      "Tudo do Acelerador de Crescimento",
+      "Relatórios com marca personalizada",
+      "Múltiplos perfis de negócios",
+      "Ferramentas de colaboração em equipe",
+      "Acesso à API",
+      "Gerente de conta dedicado",
+      "Integrações personalizadas"
     ],
-    buttonText: "Contact Sales",
+    buttonText: "Contatar Vendas",
     popular: false,
     gradient: "from-cyan-600 to-blue-600"
   }
@@ -62,10 +62,10 @@ export const PricingSection = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
-            Choose Your Growth Plan
+            Escolha Seu Plano de Crescimento
           </h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            Start with our free analysis, then unlock the full potential of your business with detailed growth strategies.
+            Comece com nossa análise gratuita, depois desbloqueie todo o potencial do seu negócio com estratégias detalhadas de crescimento.
           </p>
         </div>
 
@@ -81,7 +81,7 @@ export const PricingSection = () => {
             >
               {plan.popular && (
                 <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-1">
-                  Most Popular
+                  Mais Popular
                 </Badge>
               )}
               
@@ -117,7 +117,7 @@ export const PricingSection = () => {
                 
                 {plan.popular && (
                   <p className="text-center text-sm text-gray-400 mt-2">
-                    ⚡ Most businesses see results within 30 days
+                    ⚡ A maioria dos negócios vê resultados em 30 dias
                   </p>
                 )}
               </CardContent>
@@ -127,10 +127,10 @@ export const PricingSection = () => {
 
         <div className="text-center mt-12">
           <p className="text-gray-400 mb-4">
-            🔒 Secure payment • 30-day money-back guarantee • Cancel anytime
+            🔒 Pagamento seguro • Garantia de 30 dias • Cancelar a qualquer momento
           </p>
           <p className="text-sm text-gray-500">
-            Join 10,000+ businesses already growing with our platform
+            Junte-se a mais de 10.000 negócios já crescendo com nossa plataforma
           </p>
         </div>
       </div>

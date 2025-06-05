@@ -12,37 +12,37 @@ export const Footer = () => {
               BusinessGlow
             </h3>
             <p className="text-gray-400 mb-4">
-              Empowering businesses to unlock their digital potential with AI-powered insights and growth strategies.
+              Capacitando negócios para desbloquear seu potencial digital com insights alimentados por IA e estratégias de crescimento.
             </p>
           </div>
           
           <div>
-            <h4 className="font-semibold text-white mb-4">Product</h4>
+            <h4 className="font-semibold text-white mb-4">Produto</h4>
             <ul className="space-y-2 text-gray-400">
-              <li><a href="#" className="hover:text-purple-400 transition-colors">Free Analysis</a></li>
-              <li><a href="#" className="hover:text-purple-400 transition-colors">Premium Features</a></li>
-              <li><a href="#" className="hover:text-purple-400 transition-colors">Enterprise</a></li>
-              <li><a href="#" className="hover:text-purple-400 transition-colors">API Access</a></li>
+              <li><a href="#" className="hover:text-purple-400 transition-colors">Análise Gratuita</a></li>
+              <li><a href="#" className="hover:text-purple-400 transition-colors">Recursos Premium</a></li>
+              <li><a href="#" className="hover:text-purple-400 transition-colors">Empresarial</a></li>
+              <li><a href="#" className="hover:text-purple-400 transition-colors">Acesso à API</a></li>
             </ul>
           </div>
           
           <div>
-            <h4 className="font-semibold text-white mb-4">Resources</h4>
+            <h4 className="font-semibold text-white mb-4">Recursos</h4>
             <ul className="space-y-2 text-gray-400">
               <li><a href="#" className="hover:text-purple-400 transition-colors">Blog</a></li>
-              <li><a href="#" className="hover:text-purple-400 transition-colors">Case Studies</a></li>
-              <li><a href="#" className="hover:text-purple-400 transition-colors">Help Center</a></li>
+              <li><a href="#" className="hover:text-purple-400 transition-colors">Casos de Sucesso</a></li>
+              <li><a href="#" className="hover:text-purple-400 transition-colors">Central de Ajuda</a></li>
               <li><a href="#" className="hover:text-purple-400 transition-colors">Webinars</a></li>
             </ul>
           </div>
           
           <div>
-            <h4 className="font-semibold text-white mb-4">Company</h4>
+            <h4 className="font-semibold text-white mb-4">Empresa</h4>
             <ul className="space-y-2 text-gray-400">
-              <li><a href="#" className="hover:text-purple-400 transition-colors">About Us</a></li>
-              <li><a href="#" className="hover:text-purple-400 transition-colors">Contact</a></li>
-              <li><a href="#" className="hover:text-purple-400 transition-colors">Privacy Policy</a></li>
-              <li><a href="#" className="hover:text-purple-400 transition-colors">Terms of Service</a></li>
+              <li><a href="#" className="hover:text-purple-400 transition-colors">Sobre Nós</a></li>
+              <li><a href="#" className="hover:text-purple-400 transition-colors">Contato</a></li>
+              <li><a href="#" className="hover:text-purple-400 transition-colors">Política de Privacidade</a></li>
+              <li><a href="#" className="hover:text-purple-400 transition-colors">Termos de Serviço</a></li>
             </ul>
           </div>
         </div>
@@ -51,17 +51,17 @@ export const Footer = () => {
         
         <div className="flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            © 2024 BusinessGlow. All rights reserved.
+            © 2024 BusinessGlow. Todos os direitos reservados.
           </p>
           <div className="flex gap-6 mt-4 md:mt-0">
             <a href="#" className="text-gray-400 hover:text-purple-400 transition-colors">
-              Privacy
+              Privacidade
             </a>
             <a href="#" className="text-gray-400 hover:text-purple-400 transition-colors">
-              Terms
+              Termos
             </a>
             <a href="#" className="text-gray-400 hover:text-purple-400 transition-colors">
-              Contact
+              Contato
             </a>
           </div>
         </div>

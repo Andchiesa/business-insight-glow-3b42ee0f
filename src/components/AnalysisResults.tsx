@@ -23,47 +23,47 @@ export const AnalysisResults: React.FC<AnalysisResultsProps> = ({ businessData, 
   // Generate insights based on business niche
   const generateInsights = () => {
     const baseInsights = [
-      "Your business name is memorable and brandable",
-      "You've chosen a profitable niche with good market demand",
-      "Your business concept shows strong potential for digital growth"
+      "O nome do seu negócio é memorável e facilmente reconhecível",
+      "Você escolheu um nicho lucrativo com boa demanda de mercado",
+      "Seu conceito de negócio mostra forte potencial para crescimento digital"
     ];
 
     const nicheSpecificInsights = {
-      "Restaurant & Food": [
-        "Food businesses have high visual appeal for social media",
-        "Local SEO is crucial for restaurant discovery",
-        "Food delivery integration opportunities exist"
+      "Restaurante e Alimentação": [
+        "Negócios de alimentação têm alto apelo visual para redes sociais",
+        "SEO local é crucial para descoberta de restaurantes",
+        "Existem oportunidades de integração com delivery"
       ],
-      "E-commerce & Retail": [
-        "Strong potential for social commerce integration",
-        "Multiple online marketplace opportunities available",
-        "Email marketing typically shows high ROI in retail"
+      "E-commerce e Varejo": [
+        "Forte potencial para integração com comércio social",
+        "Múltiplas oportunidades de marketplace online disponíveis",
+        "Email marketing normalmente mostra alto ROI no varejo"
       ],
-      "Health & Fitness": [
-        "Video content performs exceptionally well in this niche",
-        "Before/after transformation content drives engagement",
-        "Community building is a major growth driver"
+      "Saúde e Fitness": [
+        "Conteúdo em vídeo tem performance excepcional neste nicho",
+        "Conteúdo de transformação antes/depois gera engajamento",
+        "Construção de comunidade é um grande motor de crescimento"
       ]
     };
 
     return [
       ...baseInsights,
       ...(nicheSpecificInsights[businessData.niche as keyof typeof nicheSpecificInsights] || [
-        "Your niche has strong digital marketing potential",
-        "Content marketing opportunities are abundant",
-        "Social media engagement rates are typically high"
+        "Seu nicho tem forte potencial de marketing digital",
+        "Oportunidades de marketing de conteúdo são abundantes",
+        "Taxas de engajamento em redes sociais são tipicamente altas"
       ])
     ];
   };
 
   const generateGrowthOpportunities = () => {
     return [
-      "Create and optimize Google My Business profile (+120% local visibility)",
-      "Implement TikTok marketing strategy (+300% brand awareness)",
-      "Develop email marketing automation (+250% customer retention)",
-      "Launch targeted Facebook/Instagram ads (+180% lead generation)",
-      "Create SEO-optimized blog content (+200% organic traffic)",
-      "Set up conversion tracking and analytics (+150% ROI insights)"
+      "Criar e otimizar perfil do Google Meu Negócio (+120% visibilidade local)",
+      "Implementar estratégia de marketing no TikTok (+300% conhecimento da marca)",
+      "Desenvolver automação de email marketing (+250% retenção de clientes)",
+      "Lançar anúncios direcionados Facebook/Instagram (+180% geração de leads)",
+      "Criar conteúdo de blog otimizado para SEO (+200% tráfego orgânico)",
+      "Configurar rastreamento de conversões e analytics (+150% insights de ROI)"
     ];
   };
 
@@ -75,10 +75,10 @@ export const AnalysisResults: React.FC<AnalysisResultsProps> = ({ businessData, 
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
-            Analysis Complete!
+            Análise Concluída!
           </h2>
           <p className="text-xl text-gray-400">
-            Here's what we found for <span className="text-purple-400 font-semibold">{businessData.businessName}</span>
+            Aqui está o que encontramos para <span className="text-purple-400 font-semibold">{businessData.businessName}</span>
           </p>
         </div>
 
@@ -88,14 +88,14 @@ export const AnalysisResults: React.FC<AnalysisResultsProps> = ({ businessData, 
             <CardHeader className="pb-4">
               <div className="flex items-center gap-3">
                 <Badge variant="secondary" className="bg-green-500/20 text-green-300 border-green-500/30">
-                  FREE INSIGHTS
+                  INSIGHTS GRATUITOS
                 </Badge>
-                <CardTitle className="text-2xl text-white">What's Working</CardTitle>
+                <CardTitle className="text-2xl text-white">O Que Está Funcionando</CardTitle>
               </div>
             </CardHeader>
             <CardContent className="space-y-4">
               <p className="text-gray-300 mb-6">
-                Great news! We've identified several strengths in your business foundation:
+                Ótimas notícias! Identificamos vários pontos fortes na base do seu negócio:
               </p>
               
               {insights.map((insight, index) => (
@@ -106,14 +106,14 @@ export const AnalysisResults: React.FC<AnalysisResultsProps> = ({ businessData, 
               ))}
 
               <div className="mt-6 p-4 rounded-lg bg-gradient-to-r from-green-500/10 to-emerald-500/10 border border-green-500/20">
-                <h4 className="font-semibold text-green-300 mb-2">Foundation Score</h4>
+                <h4 className="font-semibold text-green-300 mb-2">Pontuação da Base</h4>
                 <div className="flex items-center gap-2">
                   <div className="w-full bg-gray-700 rounded-full h-3">
                     <div className="bg-gradient-to-r from-green-400 to-emerald-400 h-3 rounded-full w-3/4"></div>
                   </div>
                   <span className="text-green-300 font-semibold">75%</span>
                 </div>
-                <p className="text-sm text-gray-400 mt-2">Strong foundation for digital growth!</p>
+                <p className="text-sm text-gray-400 mt-2">Base sólida para crescimento digital!</p>
               </div>
             </CardContent>
           </Card>
@@ -123,16 +123,16 @@ export const AnalysisResults: React.FC<AnalysisResultsProps> = ({ businessData, 
             <CardHeader className="pb-4">
               <div className="flex items-center gap-3">
                 <Badge variant="secondary" className="bg-purple-500/20 text-purple-300 border-purple-500/30">
-                  PREMIUM INSIGHTS
+                  INSIGHTS PREMIUM
                 </Badge>
-                <CardTitle className="text-2xl text-white">Growth Opportunities</CardTitle>
+                <CardTitle className="text-2xl text-white">Oportunidades de Crescimento</CardTitle>
               </div>
             </CardHeader>
             <CardContent className="space-y-4 relative">
               {/* Blur overlay for locked content */}
               <div className={`${!showPremiumPreview ? 'blur-sm pointer-events-none' : ''} transition-all duration-300`}>
                 <p className="text-gray-300 mb-6">
-                  We've identified {opportunities.length} specific opportunities to accelerate your growth:
+                  Identificamos {opportunities.length} oportunidades específicas para acelerar seu crescimento:
                 </p>
                 
                 {opportunities.map((opportunity, index) => (
@@ -143,14 +143,14 @@ export const AnalysisResults: React.FC<AnalysisResultsProps> = ({ businessData, 
                 ))}
 
                 <div className="mt-6 p-4 rounded-lg bg-gradient-to-r from-purple-500/10 to-pink-500/10 border border-purple-500/20">
-                  <h4 className="font-semibold text-purple-300 mb-2">Growth Potential</h4>
+                  <h4 className="font-semibold text-purple-300 mb-2">Potencial de Crescimento</h4>
                   <div className="flex items-center gap-2">
                     <div className="w-full bg-gray-700 rounded-full h-3">
                       <div className="bg-gradient-to-r from-purple-400 to-pink-400 h-3 rounded-full w-11/12"></div>
                     </div>
                     <span className="text-purple-300 font-semibold">+340%</span>
                   </div>
-                  <p className="text-sm text-gray-400 mt-2">Estimated growth potential with optimization</p>
+                  <p className="text-sm text-gray-400 mt-2">Potencial estimado de crescimento com otimização</p>
                 </div>
               </div>
 
@@ -160,19 +160,19 @@ export const AnalysisResults: React.FC<AnalysisResultsProps> = ({ businessData, 
                   <div className="text-center p-6">
                     <div className="text-4xl mb-4">🔒</div>
                     <h3 className="text-xl font-semibold text-white mb-4">
-                      Unlock Your Growth Strategy
+                      Desbloqueie Sua Estratégia de Crescimento
                     </h3>
                     <p className="text-gray-300 mb-6 max-w-sm">
-                      Get detailed action plans, step-by-step guides, and unlimited analyses with our premium plan.
+                      Obtenha planos de ação detalhados, guias passo a passo e análises ilimitadas com nosso plano premium.
                     </p>
                     <Button 
                       className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-semibold py-3 px-6 rounded-xl animate-pulse-glow mb-3"
                       onClick={() => setShowPremiumPreview(true)}
                     >
-                      Preview Growth Plan
+                      Visualizar Plano de Crescimento
                     </Button>
                     <p className="text-xs text-gray-400">
-                      No commitment • See what you'll get
+                      Sem compromisso • Veja o que você receberá
                     </p>
                   </div>
                 </div>
@@ -186,11 +186,11 @@ export const AnalysisResults: React.FC<AnalysisResultsProps> = ({ businessData, 
           <Card className="glass-effect border-gradient-to-r from-purple-500/50 to-pink-500/50 bg-gradient-to-r from-purple-500/10 to-pink-500/10">
             <CardContent className="p-8 text-center">
               <h3 className="text-2xl font-bold text-white mb-4">
-                Ready to Unlock Your Business Growth?
+                Pronto para Desbloquear o Crescimento do Seu Negócio?
               </h3>
               <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
-                Join thousands of businesses that have accelerated their growth with our detailed action plans, 
-                unlimited analyses, and step-by-step implementation guides.
+                Junte-se a milhares de negócios que aceleraram seu crescimento com nossos planos de ação detalhados, 
+                análises ilimitadas e guias de implementação passo a passo.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
@@ -198,15 +198,15 @@ export const AnalysisResults: React.FC<AnalysisResultsProps> = ({ businessData, 
                   size="lg"
                   className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-semibold py-4 px-8 rounded-xl text-lg shadow-lg hover:shadow-purple-500/25 transition-all duration-300 animate-glow"
                 >
-                  Unlock Premium Plan - $29/month
+                  Desbloquear Plano Premium - R$29/mês
                   <ArrowUp className="ml-2 h-5 w-5" />
                 </Button>
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm text-gray-400">
-                <div>✅ Detailed Action Plans</div>
-                <div>✅ Unlimited Analyses</div>
-                <div>✅ Step-by-Step Guides</div>
+                <div>✅ Planos de Ação Detalhados</div>
+                <div>✅ Análises Ilimitadas</div>
+                <div>✅ Guias Passo a Passo</div>
               </div>
             </CardContent>
           </Card>
@@ -222,7 +222,7 @@ export const AnalysisResults: React.FC<AnalysisResultsProps> = ({ businessData, 
             onClick={onReset}
             className="border-gray-600 text-gray-300 hover:bg-gray-800 hover:text-white"
           >
-            Analyze Another Business
+            Analisar Outro Negócio
           </Button>
         </div>
       </div>

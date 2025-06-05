@@ -4,38 +4,38 @@ import { Card, CardContent } from '@/components/ui/card';
 
 const features = [
   {
-    title: "Google Presence Analysis",
-    description: "Complete audit of your Google My Business profile, search rankings, and local SEO performance.",
+    title: "Análise de Presença no Google",
+    description: "Auditoria completa do seu perfil no Google Meu Negócio, posicionamento em buscas e performance de SEO local.",
     icon: "🎯",
     gradient: "from-purple-500 to-pink-500"
   },
   {
-    title: "Social Media Audit",
-    description: "Comprehensive analysis of your presence across Facebook, Instagram, TikTok, LinkedIn and more.",
+    title: "Auditoria de Redes Sociais",
+    description: "Análise abrangente da sua presença no Facebook, Instagram, TikTok, LinkedIn e outras redes sociais.",
     icon: "📱",
     gradient: "from-cyan-500 to-blue-500"
   },
   {
-    title: "Website Optimization",
-    description: "Detailed review of your website's design, usability, mobile optimization and conversion potential.",
+    title: "Otimização de Website",
+    description: "Revisão detalhada do design, usabilidade, otimização mobile e potencial de conversão do seu site.",
     icon: "💻",
     gradient: "from-pink-500 to-purple-500"
   },
   {
-    title: "Digital Marketing Strategy",
-    description: "Evaluation of your paid ads, email marketing, SEO, and content marketing effectiveness.",
+    title: "Estratégia de Marketing Digital",
+    description: "Avaliação dos seus anúncios pagos, email marketing, SEO e efetividade do marketing de conteúdo.",
     icon: "📊",
     gradient: "from-blue-500 to-cyan-500"
   },
   {
-    title: "Competitor Analysis",
-    description: "See how you stack up against competitors and identify opportunities they're missing.",
+    title: "Análise da Concorrência",
+    description: "Veja como você se compara aos concorrentes e identifique oportunidades que eles estão perdendo.",
     icon: "🔍",
     gradient: "from-purple-500 to-cyan-500"
   },
   {
-    title: "Growth Roadmap",
-    description: "Get a personalized action plan with specific steps to grow your digital presence.",
+    title: "Roadmap de Crescimento",
+    description: "Receba um plano de ação personalizado com passos específicos para crescer sua presença digital.",
     icon: "🚀",
     gradient: "from-pink-500 to-red-500"
   }
@@ -47,11 +47,11 @@ export const Features = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
-            Comprehensive Digital Analysis
+            Análise Digital Abrangente
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            Our AI-powered platform analyzes every aspect of your digital presence to uncover 
-            hidden opportunities and growth potential.
+            Nossa plataforma com IA analisa todos os aspectos da sua presença digital para descobrir 
+            oportunidades ocultas e potencial de crescimento.
           </p>
         </div>
         

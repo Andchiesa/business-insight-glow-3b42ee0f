@@ -19,18 +19,18 @@ export const Hero = () => {
       <div className="relative z-10 max-w-6xl mx-auto text-center">
         <div className="mb-8 animate-fade-in">
           <span className="inline-block px-4 py-2 rounded-full bg-gradient-to-r from-purple-500/20 to-cyan-500/20 border border-purple-500/30 text-sm font-medium text-purple-300 mb-6">
-            🚀 Transform Your Digital Presence
+            🚀 Transforme Sua Presença Digital
           </span>
         </div>
         
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-purple-200 to-cyan-200 bg-clip-text text-transparent leading-tight">
-          Unlock Your Business's
-          <span className="block glow-text">Digital Potential</span>
+          Desbloqueie o Potencial
+          <span className="block glow-text">Digital do Seu Negócio</span>
         </h1>
         
         <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-          Get a comprehensive analysis of your online presence and receive personalized growth insights 
-          to dominate your market in the digital world.
+          Receba uma análise completa da sua presença online e insights personalizados de crescimento 
+          para dominar seu mercado no mundo digital.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
@@ -39,13 +39,13 @@ export const Hero = () => {
             className="bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-700 hover:to-cyan-700 text-white font-semibold py-4 px-8 rounded-xl text-lg shadow-lg hover:shadow-purple-500/25 transition-all duration-300 animate-glow"
             onClick={scrollToAnalysis}
           >
-            Start Free Analysis
+            Iniciar Análise Gratuita
             <ArrowDown className="ml-2 h-5 w-5" />
           </Button>
           
           <div className="text-center sm:text-left">
             <p className="text-sm text-gray-400">
-              ✅ Free insights • ✅ No credit card required • ✅ Instant results
+              ✅ Insights gratuitos • ✅ Sem cartão de crédito • ✅ Resultados instantâneos
             </p>
           </div>
         </div>
@@ -53,16 +53,16 @@ export const Hero = () => {
         {/* Stats */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-2xl mx-auto">
           <div className="text-center">
-            <div className="text-3xl font-bold text-cyan-400 mb-2">10,000+</div>
-            <div className="text-gray-400">Businesses Analyzed</div>
+            <div className="text-3xl font-bold text-cyan-400 mb-2">10.000+</div>
+            <div className="text-gray-400">Negócios Analisados</div>
           </div>
           <div className="text-center">
             <div className="text-3xl font-bold text-purple-400 mb-2">94%</div>
-            <div className="text-gray-400">Growth Rate</div>
+            <div className="text-gray-400">Taxa de Crescimento</div>
           </div>
           <div className="text-center">
             <div className="text-3xl font-bold text-pink-400 mb-2">24h</div>
-            <div className="text-gray-400">Average ROI Time</div>
+            <div className="text-gray-400">Tempo Médio de ROI</div>
           </div>
         </div>
       </div>
