@@ -9,7 +9,7 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div>
             <h3 className="text-xl font-bold text-white mb-4 bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">
-              BusinessGlow
+              Lif3 Digital Media
             </h3>
             <p className="text-gray-400 mb-4">
               Capacitando negócios para desbloquear seu potencial digital com insights alimentados por IA e estratégias de crescimento.
@@ -51,7 +51,7 @@ export const Footer = () => {
         
         <div className="flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            © 2024 BusinessGlow. Todos os direitos reservados.
+            © 2024 Lif3 Digital Media. Todos os direitos reservados.
           </p>
           <div className="flex gap-6 mt-4 md:mt-0">
             <a href="#" className="text-gray-400 hover:text-purple-400 transition-colors">
